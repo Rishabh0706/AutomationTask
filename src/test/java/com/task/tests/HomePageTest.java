@@ -32,19 +32,16 @@ public class HomePageTest extends TestBase{
 	}
 
 	@Test(priority=1)
-	public void verifyHomePageTitleTest(){
-		System.out.println("tests");
-		//Assert.assertEquals(homePagetitle,"CRMPRO","Home Page Title not matched");
-	}
-	
-	@Test(priority=2)
-	public void verifyUsernmaeTest(){
-		testUtil.switchToFrame();
-		Assert.assertTrue(homePage.verifyCorrectUserName());
+	public void createReportTemplateTest(){
+		
+		String templateName = homePage.createReportTemplate();
+		Assert.assertEquals(templateName,prop.getProperty("template_name"));
 	}
 	
 	@AfterMethod
 	public void teardown(){
+		
+		homePage.logOut();
 		//driver.quit();
 	}
 

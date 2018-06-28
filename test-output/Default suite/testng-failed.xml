@@ -5,9 +5,9 @@
     <classes>
       <class name="com.task.tests.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitleTest"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="createReportTemplateTest"/>
         </methods>
       </class> <!-- com.task.tests.HomePageTest -->
     </classes>
