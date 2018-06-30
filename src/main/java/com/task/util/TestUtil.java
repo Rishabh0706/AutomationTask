@@ -9,18 +9,10 @@ import org.openqa.selenium.TakesScreenshot;
 
 import com.task.base.TestBase;
 
-
-
 public class TestUtil extends TestBase {
 
 	public static long PAGE_LOAD_TIMEOUT = 40;
-	public static long IMPLICIT_WAIT = 60;
-	
-	public void switchToFrame(){
-		driver.switchTo().frame("mainpanel");
-	}
-	
-	
+	public static long IMPLICIT_WAIT = 100;
 	
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

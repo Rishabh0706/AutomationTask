@@ -11,15 +11,14 @@ import com.task.pages.LoginPage;
 import com.task.pages.TemplatesDesignPage;
 import com.task.util.TestUtil;
 
-
-public class HomePageTest extends TestBase{
+public class TemplateDesignPageTest extends TestBase{
 	
 	LoginPage loginPage;
 	HomePage homePage;
 	TestUtil testUtil;
 	TemplatesDesignPage templatesDesignPage;
 	
-	public HomePageTest(){
+	public TemplateDesignPageTest(){
 		super();
 	}
 	

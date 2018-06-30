@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.task.tests.HomePageTest">
+      <class name="com.task.tests.AccountHoldingsPageTest">
         <methods>
-          <include name="setup"/>
           <include name="teardown"/>
-          <include name="createReportTemplateTest"/>
+          <include name="totalNetworhTest"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.task.tests.HomePageTest -->
+      </class> <!-- com.task.tests.AccountHoldingsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,6 +1,3 @@
-///@author Rishabh
-
-
 package com.task.base;
 
 import java.io.File;
@@ -43,14 +40,17 @@ public class TestBase {
 	public static void initialization(){
 		
 		String browserName = prop.getProperty("browser");
+		
+		File driversPath = new File(System.getProperty("user.dir"));
+		
 		if(browserName.equals("Chrome")){
-			//System.setProperty("webdriver.chrome.driver", "D:/Docs/Workspace/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", driversPath+"/chromedriver.exe");
 			driver = new ChromeDriver();
 		}else if(browserName.equals("FF")){
-			//System.setProperty("webdriver.gecko.driver", "D:/Docs/Workspace/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", driversPath+"/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}else{
-			System.setProperty("webdriver.gecko.driver", "D:/Docs/Workspace/geckodriver.exe");
+			System.setProperty("webdriver.ie.driver", driversPath+"/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		

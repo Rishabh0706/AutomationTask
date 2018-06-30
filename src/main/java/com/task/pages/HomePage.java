@@ -14,6 +14,12 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//ul[@aria-labelledby='95']//li[@class='k-item k-state-default k-first']")
 	WebElement reportsTemplateDesignTab;
 	
+	@FindBy(xpath="//a[@id='25']")
+	WebElement userAccountsTab;
+	
+	@FindBy(xpath="//ul[@aria-labelledby='25']/li/a/span[text()=' Account Holdings']")
+	WebElement accountHoldingsTab;
+	
 	@FindBy(xpath="//a[@class='dropdown-toggle']")
 	WebElement logOutDropDown;
 	
@@ -30,6 +36,14 @@ public class HomePage extends TestBase{
 		reportsTemplateDesignTab.click();
 		
 		return new TemplatesDesignPage();
+	}
+	
+	public AccountHoldingsPage clickAccountHoldingsTab(){
+		
+		userAccountsTab.click();
+		accountHoldingsTab.click();
+		
+		return new AccountHoldingsPage();
 	}
 	
 	public void logOut(){
