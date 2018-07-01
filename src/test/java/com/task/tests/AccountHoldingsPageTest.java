@@ -38,6 +38,7 @@ public class AccountHoldingsPageTest extends TestBase {
 		accountHoldingsPage = homePage.clickAccountHoldingsTab();
 		boolean currentValueUSD = accountHoldingsPage.currentValueUSD(prop.getProperty("account_name"));
 		Assert.assertTrue(currentValueUSD, "Current USD Value is not displayed");
+		System.out.println("Current USD vlue is diplayed on page");
 		boolean netWorth = accountHoldingsPage.totalNetworh();
 		Assert.assertTrue(netWorth, "Current USD Value is not equal to Total Networth Value");
 	}
@@ -45,8 +46,8 @@ public class AccountHoldingsPageTest extends TestBase {
 	@AfterMethod
 	public void teardown(){
 		
-		//homePage.logOut();
-		//driver.quit();
+		homePage.logOut();
+		driver.quit();
 	}
 	
 

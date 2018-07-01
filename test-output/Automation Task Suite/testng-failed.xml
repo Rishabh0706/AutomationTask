@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Task Suite]">
+  <listeners>
+    <listener class-name="com.task.extentReportListener.ExtentReportListener"/>
+  </listeners>
   <test thread-count="5" name="Automation Task Test Cases(failed)">
     <classes>
-      <class name="com.task.tests.HomePageTest">
+      <class name="com.task.tests.AccountHoldingsPageTest">
         <methods>
+          <include name="teardown"/>
+          <include name="totalNetworhTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.task.tests.AccountHoldingsPageTest -->
+      <class name="com.task.tests.TemplateDesignPageTest">
+        <methods>
+          <include name="createReportTemplateTest"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="createReportTemplateTest"/>
         </methods>
-      </class> <!-- com.task.tests.HomePageTest -->
+      </class> <!-- com.task.tests.TemplateDesignPageTest -->
     </classes>
   </test> <!-- Automation Task Test Cases(failed) -->
 </suite> <!-- Failed suite [Automation Task Suite] -->

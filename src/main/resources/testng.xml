@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Automation Task Suite">
+    
+    <listeners>
+      <listener class-name="com.task.extentReportListener.ExtentReportListener"></listener>
+  </listeners>
+    
   <test name="Automation Task Test Cases">
       <classes>
-          <class name="com.task.tests.HomePageTest"/>
+          <class name="com.task.tests.AccountHoldingsPageTest"/>
+          <class name="com.task.tests.TemplateDesignPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

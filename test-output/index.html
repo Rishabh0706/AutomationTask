@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Rishabh\AppData\Local\Temp\testng-eclipse-1240016412\testng-customsuite.xml</span>
+                    <span>C:\Users\Rishabh\AppData\Local\Temp\testng-eclipse--351894524\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -128,12 +128,11 @@
                   <a name="totalNetworhTest">
                   </a> <!-- totalNetworhTest -->
                   <span class="method-name">totalNetworhTest</span>
-                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;3,194,810.24&quot;
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at com.task.pages.AccountHoldingsPage.totalNetworh(AccountHoldingsPage.java:65)
-	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:41)
+                  <div class="stack-trace">java.lang.AssertionError: Current USD Value is not equal to Total Networth Value expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -168,7 +167,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Rishabh\AppData\Local\Temp\testng-eclipse-1240016412\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Rishabh\AppData\Local\Temp\testng-eclipse--351894524\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,12 +224,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'totalNetworhTest')
 data.setCell(0, 2, 'com.task.tests.AccountHoldingsPageTest')
-data.setCell(0, 3, 15986);
+data.setCell(0, 3, 21150);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 15 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,11 +264,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">totalNetworhTest</span>
-                <span class="method-start">51100 ms</span>
+                <span class="method-start">18396 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">67267 ms</span>
+                <span class="method-start">39567 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

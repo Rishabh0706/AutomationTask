@@ -2,27 +2,26 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67306" started-at="2018-06-30T21:14:47Z" finished-at="2018-06-30T21:15:55Z">
+  <suite name="Default suite" duration-ms="44336" started-at="2018-07-01T15:27:33Z" finished-at="2018-07-01T15:28:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="67306" started-at="2018-06-30T21:14:47Z" finished-at="2018-06-30T21:15:55Z">
+    <test name="Default test" duration-ms="44336" started-at="2018-07-01T15:27:33Z" finished-at="2018-07-01T15:28:17Z">
       <class name="com.task.tests.AccountHoldingsPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.task.tests.AccountHoldingsPageTest@4883b407]" name="setup" is-config="true" duration-ms="51100" started-at="2018-06-30T21:14:47Z" finished-at="2018-06-30T21:15:39Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.task.tests.AccountHoldingsPageTest@3abbfa04]" name="setup" is-config="true" duration-ms="18396" started-at="2018-07-01T15:27:33Z" finished-at="2018-07-01T15:27:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="totalNetworhTest()[pri:1, instance:com.task.tests.AccountHoldingsPageTest@4883b407]" name="totalNetworhTest" duration-ms="15986" started-at="2018-06-30T21:15:39Z" finished-at="2018-06-30T21:15:55Z">
-          <exception class="java.lang.NumberFormatException">
+        <test-method status="FAIL" signature="totalNetworhTest()[pri:1, instance:com.task.tests.AccountHoldingsPageTest@3abbfa04]" name="totalNetworhTest" duration-ms="21150" started-at="2018-07-01T15:27:51Z" finished-at="2018-07-01T15:28:13Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[For input string: "3,194,810.24"]]>
+              <![CDATA[Current USD Value is not equal to Total Networth Value expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "3,194,810.24"
-at java.lang.NumberFormatException.forInputString(Unknown Source)
-at java.lang.Integer.parseInt(Unknown Source)
-at java.lang.Integer.parseInt(Unknown Source)
-at com.task.pages.AccountHoldingsPage.totalNetworh(AccountHoldingsPage.java:65)
-at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:41)
+              <![CDATA[java.lang.AssertionError: Current USD Value is not equal to Total Networth Value expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:43)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -50,11 +49,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- totalNetworhTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.task.tests.AccountHoldingsPageTest@4883b407]" name="teardown" is-config="true" duration-ms="0" started-at="2018-06-30T21:15:55Z" finished-at="2018-06-30T21:15:55Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.task.tests.AccountHoldingsPageTest@3abbfa04]" name="teardown" is-config="true" duration-ms="4724" started-at="2018-07-01T15:28:13Z" finished-at="2018-07-01T15:28:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

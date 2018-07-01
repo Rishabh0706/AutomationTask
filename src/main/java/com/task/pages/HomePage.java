@@ -1,5 +1,6 @@
 package com.task.pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -48,6 +49,8 @@ public class HomePage extends TestBase{
 	
 	public void logOut(){
 		
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", logOutDropDown);
 		logOutDropDown.click();
 		logOutBtn.click();
 	}

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Jul 01 02:44:47 IST 2018</td>
+<td>Started on:</td><td>Sun Jul 01 20:57:33 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67306 ms)</td>
+<tr><td>Total time:</td><td>44 seconds (44336 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.task.tests.AccountHoldingsPageTest.totalNetworhTest()'><b>totalNetworhTest</b><br>Test class: com.task.tests.AccountHoldingsPageTest</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;3,194,810.24&quot;
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at com.task.pages.AccountHoldingsPage.totalNetworh(AccountHoldingsPage.java:65)
-	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:41)
+<td><div><pre>java.lang.AssertionError: Current USD Value is not equal to Total Networth Value expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -107,13 +106,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-</pre></div><a href='#' onClick='toggleBox("stack-trace669053685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace669053685'><pre>java.lang.NumberFormatException: For input string: &quot;3,194,810.24&quot;
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at com.task.pages.AccountHoldingsPage.totalNetworh(AccountHoldingsPage.java:65)
-	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:41)
+</pre></div><a href='#' onClick='toggleBox("stack-trace353580491", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace353580491'><pre>java.lang.AssertionError: Current USD Value is not equal to Total Networth Value expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at com.task.tests.AccountHoldingsPageTest.totalNetworhTest(AccountHoldingsPageTest.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -140,8 +138,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 </pre></div></td>
-<td>15</td>
-<td>com.task.tests.AccountHoldingsPageTest@4883b407</td></tr>
+<td>21</td>
+<td>com.task.tests.AccountHoldingsPageTest@3abbfa04</td></tr>
 </table><p>
 </body>
 </html>
